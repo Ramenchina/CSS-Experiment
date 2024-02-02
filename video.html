@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #hero {
+            color: white;
+            height: 60vh;
+            width: 100%;
+            position: relative;
+            font-family: sans-serif;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        nav {
+            height: 50px;
+            width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            font-size: 15px;
+            color: white;
+        }
+        
+        nav ul li {
+            
+            margin-left: 10px;
+        }
+        
+        #hero::before {
+            z-index: -1;
+            position: absolute;
+        }
+
+        .text {
+            height: 40vh;
+            display: flex;
+            margin-left: 50px;
+            align-items:center;
+            width: 600px;
+            font-size: 1.5rem;
+        }
+
+        ul li:nth-child(4){
+            position: absolute;
+            right: 0;
+            top: 6;
+            background-color: crimson;
+            height: 30px;
+            text-align: center;
+        }
+
+        .text h1 {
+            color: white;
+        }
+
+        .text h1 span {
+            color: yellow;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="hero">
+        <video src="chaeeewooonnn.mp4" autoplay muted loop></video>
+        <nav>
+            <h1>LOGO</h1>
+            <ul>
+                <li>dash</li>
+                <li>home</li>
+                <li>any</li>
+            </ul>
+        </nav>
+
+        <div class="text">
+            <h1>CREATE A <span> AMAZIN VIDEOS</span> FOR YOUR WEBSITE</h1>
+        </div>
+    </section>
+</body>
+</html>
